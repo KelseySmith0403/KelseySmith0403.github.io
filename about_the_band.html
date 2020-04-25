@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: SteelBlue;
+  font-family: verdana; 
+  padding: 30px;
+  text-align: center;
+  font-size: 5vw;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 700px;
+  background: LightSteelBlue;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  font-family: verdana;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  height: 700px;
+  background-color: #e6e6e6;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #d9d9d9;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+ }
+}
+
+a:link {
+	color: white;
+    }
+    
+a:hover {
+	color: SteelBlue;
+    }
+
+a:visited {
+	color:white;
+    }
+img {
+	max-height:100%;
+    max-legnth:100%;
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2><img src="https://images.cooltext.com/5409549.png"/></h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Home Page</a></li>
+      <li><a href="#">About The Band</a></li>
+      <li><a href="#">Top Albums</a></li>
+      <li><a href="#">Media</a></li>
+      <li><a href="#">Tour</a></li>
+      
+    </ul>
+    <img src="https://f4.bcbits.com/img/a3305412851_10.jpg" height=150 width=155/>
+    
+  </nav>
+  
+  <article>
+ 	<img src="https://fearlessrecords.com/wp-content/uploads/2017/01/MM_Fearless_SitePick-600x300.jpg"/> 
+    
+	<p>Movements is a post-hardcore band from Rancho Santa Margarita, California, formed in 2015. They were influenced by bands such as Title Fight, Oceana, Thrice and Balance and Composure. Guitarist Brett Chiodo and Vocalist Patrick Miranda got together to create a band after playing together casually for years. Brett Chiodo recruited Spencer York as a drummer. Patrick Miranda recruited Austin Cressey as a bassist.</p> 
+	
+    
+	<p>Late January of 2015, their single “Protection” was self-released. Their guitarist, Brett Chiodo, wrote the lyrics for the song and created the band name. Patrick and Brett knew it was meant to be after Patrick sand his melodies over the music for the first time. The band played their first show open for the band Have Mercy in March of 2015. A second single, “Buried,” was released on the 17th of March and a third single, “Scripted,” on April 14th.</p>
+	
+	
+	<p>After their first local gig, the band signed a record deal with Fearless Records in August of 2015. They had a choice between Hopeless and Fearless but chose Fearless Records. After their first EP was recorded their guitarist left the band and was replaced by Ira George. Their debut EP, Outgrown Things, was released on March 11, 2016 and reached 42 on the Indie Charts. That same month, the band toured with Real Friends on a tour.</p>
+	
+    
+        
+  </article>
+  
+</section>
+
+<footer>
+  <i>Copyright &copy; 2020 Kelsey Smith. All Rights Reserved.</i> 
+  
+</footer>
+
+</body>
+</html>

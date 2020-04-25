@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: SteelBlue;
+  font-family: verdana; 
+  padding: 30px;
+  text-align: center;
+  font-size: 5vw;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 1000px;
+  background: LightSteelBlue;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  font-family: verdana;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  height: 1000px;
+  background-color: #e6e6e6;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #d9d9d9;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+ }
+}
+
+a:link {
+	color: white;
+    }
+    
+a:hover {
+	color: SteelBlue;
+    }
+
+a:visited {
+	color:white;
+    }
+img {
+	max-height:100%;
+    max-legnth:100%;
+}
+
+p { color: black;
+
+}
+
+ol { 
+	color: black;
+    text-align: left;
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2><img src="https://images.cooltext.com/5409549.png"/></h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Home Page</a></li>
+      <li><a href="#">About The Band</a></li>
+      <li><a href="#">Top Albums</a></li>
+      <li><a href="#">Media</a></li>
+      <li><a href="#">Tour</a></li>
+      
+    </ul>
+    <img src="https://f4.bcbits.com/img/a3305412851_10.jpg" height=150 width=155/>
+    
+  </nav>
+  
+  <article>
+	<h1 style="font-size:50px;color:black;border:6px solid white;">Top Albums</h1>
+    
+    <table align="center">
+    
+    <tr> 
+    <td><th>Feel Something</th></td>
+    <td><img src="https://static.punknews.org/images/covers/movements-feel-something.webp" height=250 width=250</td>
+    <td>
+    	<ol>
+        <li>Full Circle</li> 
+        <li>Third Degree</li>
+        <li>Colorblind</li>
+        <li>Daylily</li>
+        <li>Deadly Dull</li>
+        <li>Fever Dream</li>
+        <li>Suffer Through</li>
+        <li>Deep Red</li>
+        <li>Under The Gun</li>
+        <li>Submerge</li>
+        <li>The Grey</li>
+        </ol>
+    </td>
+    </tr>
+    
+    
+    <tr>
+    <td><th>Outgrown Things</th></td>
+    <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/54/Outgrown_things.png/220px-Outgrown_things.png" height=251 width=251> </td>
+    <td>
+    	<ol>
+        <li>Kept</li>
+        <li>Nineteen</li>
+        <li>Worst Wishes</li>
+        <li>Hatchet</li>
+        <li>Vacant Home</li>
+        <li>Losing Fight</li>
+        </ol>
+    </td>
+    </tr>
+    
+    
+    <tr>
+    <td><th>Songs That Saved My Life</th></td>
+    <td><img src="https://78.media.tumblr.com/4e56668e5e3c1061bf7990a37ba08327/tumblr_inline_peuxtxC2mr1sitizh_540.png" height=251 width=251> 
+    </td>
+    <td>
+    <ol>
+    <li>Losing My Religion</li>
+    </ol>
+    </td>
+    </tr>
+    
+    </table>
+	    
+  </article>
+  
+</section>
+
+<footer>
+  <i>Copyright &copy; 2020 Kelsey Smith. All Rights Reserved.</i> 
+  
+</footer>
+
+</body>
+</html>
